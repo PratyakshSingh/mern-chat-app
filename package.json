@@ -5,12 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server.js",
-    "client": "npm start --prefix client",
-    "clientinstall": "npm install --prefix client",
-    "dev": "concurrently \"npm run start\" \"npm run client\"",
-    "build": "npm install &&  npm install --prefix client && npm run build --prefix client",
-    "render-postbuild": "npm install && NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "node server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "author": "Pratyaksh Singh",
   "license": "ISC",
