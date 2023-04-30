@@ -51,7 +51,10 @@ const server = app.listen(process.env.PORT, () => {
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "*:*",
+    origin: "https://mern-chat-app-g9l8.onrender.com",
+    methods: ["GET", "POST"],
+    // allowedHeaders: ["my-custom-header"],
+    // credentials: true,
   },
 });
 
