@@ -20,7 +20,7 @@ import Lottie from "react-lottie";
 import ChatProfileModal from "./ChatProfileModal";
 import GroupChatProfileModal from "./GroupChatProfileModal";
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://mern-chat-app-g9l8.onrender.com";
 let socket, selectedChatCompare;
 
 // eslint-disable-next-line react/prop-types
