@@ -52,7 +52,7 @@ const CreateGroupModal = ({ children }) => {
       };
 
       const { data } = await axios.post(
-        "/api/chat/newGroupChat",
+        `/api/chat/newGroupChat`,
         { name: groupName, users: selectedUsers.map((u) => u._id) },
         config
       );

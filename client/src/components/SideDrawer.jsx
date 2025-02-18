@@ -84,7 +84,7 @@ const SideDrawer = ({ fetchAgain, setFetchAgain }) => {
       };
 
       const { data } = await axios.post(
-        "/api/chat/newChat",
+        `/api/chat/newChat`,
         { userId },
         config
       );

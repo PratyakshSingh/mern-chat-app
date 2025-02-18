@@ -14,6 +14,12 @@ connectDB();
 const app = express();
 
 app.use(express.json());
+// app.use(express.static(path.join(__dirname, 'client', 'dist')));
+//
+// // Handle React Routing - Send index.html for all unknown routes
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'client', 'dist', 'index.html'));
+// });
 
 //sample api
 
@@ -32,9 +38,9 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname1, "./client", "dist", "index.html"))
   );
 } else {
-  app.get("/", (req, res) => {
-    res.send("API is running..");
-  });
+app.get("/", (req, res) => {
+  res.send("API is running..");
+});
 }
 
 //---------------deployment---------------------
@@ -51,7 +57,7 @@ const server = app.listen(process.env.PORT, () => {
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "https://mern-chat-app-g9l8.onrender.com",
+    origin: "https://localhost:5000",
     methods: ["GET", "POST"],
     // allowedHeaders: ["my-custom-header"],
     // credentials: true,

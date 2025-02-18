@@ -78,7 +78,7 @@ const ChatBox = ({ fetchAgain, setFetchAgain }) => {
         };
         setNewMessage("");
         const { data } = await axios.post(
-          "/api/message",
+          `/api/message`,
           {
             content: newMessage,
             chatId: selectedChat,
@@ -169,7 +169,7 @@ const ChatBox = ({ fetchAgain, setFetchAgain }) => {
     >
       {selectedChat === undefined ? (
         <Box
-          fontSize="50px"
+          fontSize={{ md: "30px" }}
           display="flex"
           justifyContent="center"
           alignItems="center"

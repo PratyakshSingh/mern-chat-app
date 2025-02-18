@@ -1,0 +1,30 @@
+
+> realtime-chat-app@1.0.0 dev
+> concurrently "npm start" "npm run client"
+
+[0] 
+[0] > realtime-chat-app@1.0.0 start
+[0] > nodemon server.js
+[0] 
+[1] 
+[1] > realtime-chat-app@1.0.0 client
+[1] > npm start --prefix ./client
+[1] 
+[0] [33m[nodemon] 2.0.12[39m
+[0] [33m[nodemon] to restart at any time, enter `rs`[39m
+[0] [33m[nodemon] watching path(s): *.*[39m
+[0] [33m[nodemon] watching extensions: js,mjs,json[39m
+[0] [32m[nodemon] starting `node server.js`[39m
+[0] App started on port 5000
+[1] npm ERR! Missing script: "start"
+[1] npm ERR! 
+[1] npm ERR! Did you mean one of these?
+[1] npm ERR!     npm star # Mark your favorite packages
+[1] npm ERR!     npm stars # View packages marked as favorites
+[1] npm ERR! 
+[1] npm ERR! To see a list of scripts, run:
+[1] npm ERR!   npm run
+[1] 
+[1] npm ERR! A complete log of this run can be found in: C:\Users\PC\AppData\Local\npm-cache\_logs\2025-02-17T21_57_00_696Z-debug-0.log
+[1] npm run client exited with code 1
+[0] MongoDB Connected: ac-qddhwpc-shard-00-00.vwgyatq.mongodb.net
